@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relativelayout"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivcoverimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ciggrate" />
+
+        <TextView
+            android:id="@+id/tvsongname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivcoverimage"
+            android:layout_margin="20dp"
+            android:text="Song name "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvsongduration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivcoverimage"
+            android:layout_toEndOf="@id/tvsongname"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="150dp"
+            android:text="150sec"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btntoplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_play_arrow_24"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/tvsongname" />
+
+        <Button
+            android:id="@+id/btntopause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_pause_24"
+            android:layout_toEndOf="@id/btntoplay"
+            android:layout_below="@id/tvsongname"
+            android:layout_marginLeft="60dp" />
+        <Button
+            android:id="@+id/btntodelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_delete_24"
+            android:layout_toEndOf="@id/btntopause"
+            android:layout_below="@id/tvsongname"
+            android:layout_marginLeft="50dp"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
